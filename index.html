@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Place favicon.png in the root directory -->
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/h-fav.png" type="image/x-icon" />
     <!-- Font Icons css -->
     <link rel="stylesheet" href="css/font-icons.css">
     <!-- plugins css -->
@@ -247,11 +247,15 @@
 
             </video> -->
 
+            <video autoplay muted loop id="myVideo">
+              <source src="https://honestconst121.s3.ap-south-1.amazonaws.com/Honest+1.mp4" type="video/mp4">
+            </video>
+
             <!-- YouTube VIDEO -->
-            <div class="ltn__youtube-video-background">
-                <iframe frameborder="0" height="100%" width="100%" src="https://www.youtube.com/embed/WS5haoiSijE?&autoplay=1&mute=1&loop=1">
+            <!-- <div class="ltn__youtube-video-background">
+                <iframe frameborder="0" height="100%" width="100%" src="https://drive.google.com/file/d/1j7ivZmkG0HRI0Tt1ShR9uzPDfXzTv6Ic/preview?autoplay=1" allow="autoplay">
                 </iframe>
-            </div>
+            </div> -->
 
             <!-- ltn__slide-item -->
             <div class="ltn__slide-item ltn__slide-item-2 ltn__slide-item-7 bg-image--- bg-overlay-theme-black-30" data-bs-bg="img/slider/41.jpg">
@@ -1301,6 +1305,42 @@
     <script src="js/plugins.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?21984';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#4dc247",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "marginLeft":"0",
+        "marginBottom":"125",
+        "marginRight":"5",
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Honest Construction",
+        "brandSubTitle":"Find Your Perfect Property",
+        "brandImg":"/img/h-fav.png",
+        "welcomeText":"Hi there!\nHow can I help you?",
+        "messageText":"Hello",
+        "backgroundColor":"#0a5f54",
+        "ctaText":"Start Chat",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"918828041006"
+    }
+  };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
   
 </body>
 </html>

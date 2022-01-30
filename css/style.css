@@ -14537,6 +14537,10 @@ input.cart-plus-minus-box {
       background-color: transparent;
     }
 
+    .wa-chat-box-poweredby {
+      display: none;
+    }
+
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */

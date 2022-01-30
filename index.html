@@ -44,6 +44,28 @@
         }
       }
       .parent-slide{padding:15px;}
+      .megaphone {
+        display: inline;
+        width: 50px;
+      }
+      .offer-banner {
+        text-align: center;
+        background-color: #fb412a;
+        padding: 1rem 0;
+        width: 40%;
+        border-radius: 3rem;
+        margin-bottom: 2rem;
+      }
+      @media screen and (max-width: 768px) {
+        .offer-banner {
+          width: 90%;
+        }
+      }
+      .bold-ul {
+        font-weight: bolder;
+        font-size: 1.2rem;
+      }
+      
     </style>
 </head>
 
@@ -411,10 +433,10 @@
                             <p>We have Luxury homes available at a prime location in Dronagiri, Navi Mumbai at afordable prices and including all the amenities.</p>
                         </div>
                         <ul class="ltn__list-item-1 ltn__list-item-1-before clearfix">
-                            <li>Including Stamp duty</li>
-                            <li>Free of registration charges</li>
-                            <li>No GST cost included</li>
-                            <li>Advocate and document fees are also included</li>
+                            <li class="section-subtitle ltn__secondary-color bold-ul">Including Stamp duty</li>
+                            <li class="section-subtitle ltn__secondary-color bold-ul">Free of registration charges</li>
+                            <li class="section-subtitle ltn__secondary-color bold-ul">No GST cost included</li>
+                            <li class="section-subtitle ltn__secondary-color bold-ul">Advocate and document fees are also included</li>
                         </ul>
                         <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
                             <li><span>3 <i class="flaticon-bed"></i></span>
@@ -462,7 +484,10 @@
     </div>
     <!-- ABOUT US AREA END -->
 
-    <!-- <hr style="background-color: #777;"> -->
+    <h1 class="container offer-banner">
+      <img src="/img/icons/megaphone.png" class="megaphone" alt="">
+      <a href="luxury-product.html"><span style="color: #fff;">OFFERS</span> <span style="color: black;">Available</span></a>
+    </h1>
 
     <!-- choose crown resideny start  -->
     <div class="ltn__about-us-area pt-20 pb-20">

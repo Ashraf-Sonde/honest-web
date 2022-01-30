@@ -19,6 +19,32 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Responsive css -->
     <link rel="stylesheet" href="css/responsive.css">
+    <style>
+      .slider{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+        padding: 20px;
+        color:white;
+      }
+      .slide {width: 100%;}
+      .slide h1 .imp {color: #fb412a;}
+      .slider img{display: block;margin:auto; width: 60%; height: 400px; border-radius: 2rem;}
+      .slider-title .imp {color: #fb412a;}
+      @media screen and (max-width: 768px) {
+        .slider img {
+          width: 100%;
+          height: 200px;
+        }
+        .slide {
+          margin-right: 2rem;
+        }
+        .slide h1 {
+          font-size: 1rem;
+        }
+      }
+      .parent-slide{padding:15px;}
+    </style>
 </head>
 
 <body>
@@ -435,6 +461,37 @@
         </div>
     </div>
     <!-- ABOUT US AREA END -->
+
+    <!-- <hr style="background-color: #777;"> -->
+
+    <!-- choose crown resideny start  -->
+    <div class="ltn__about-us-area pt-20 pb-20">
+      <h1 class="slider-title container">Why <span class="imp">CROWN RESIDENCY</span>?</h1>
+
+      <div class="slider">
+        <div class="slide">
+          <img src="https://bit.ly/3HcYior" alt="" class="img-responsive" />
+          <h1 class="mt-3">Near upcoming <span class="imp">Railway Stations</span></h1>
+        </div>
+        <div class="slide">
+          <img src="https://bit.ly/34lzJqB" alt="" class="img-responsive" />
+          <h1 class="mt-3">Near <span class="imp">Bus Stop</span></h1>
+        </div>
+        <div class="slide">
+          <img src="https://bit.ly/3HgivcP" alt="" class="img-responsive" />
+          <h1 class="mt-3">Near International <span class="imp">CBSE school</span></h1>
+        </div>
+        <div class="slide">
+          <img src="https://bit.ly/3ucAWvt" alt="" class="img-responsive" />
+          <h1 class="mt-3">Near Carepoint <span class="imp">Hospital</span></h1>
+        </div>
+        <div class="slide">
+          <img src="https://bit.ly/3HidAbu" alt="" class="img-responsive" />
+          <h1 class="mt-3"><span class="imp">Highway touch</span></h1>
+        </div>
+      </div>
+    </div>
+    <!-- choose crown residency end-->
 
     <!-- FEATURE AREA START ( Feature - 6) -->
     <div class="ltn__feature-area section-bg-1 pt-40 pb-40 mb-50---">
@@ -1340,6 +1397,23 @@
       };
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
+  </script>
+
+  <script>
+    window.onload=function(){
+    $('.slider').slick({
+      autoplay:true,
+      autoplaySpeed:1500,
+      arrows:false,
+      // prevArrow:'<button type="button" class="slick-prev"></button>',
+      // nextArrow:'<button type="button" class="slick-next"></button>',
+      centerMode:true,
+      slidesToShow:1,
+      slidesToScroll:1
+      });
+    };
+    slick();
+
   </script>
   
 </body>

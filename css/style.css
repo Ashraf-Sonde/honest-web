@@ -14541,6 +14541,18 @@ input.cart-plus-minus-box {
       display: none;
     }
 
+    .lightcase-icon-close:before {
+      content: 'x';
+    }
+
+    .lightcase-icon-next:before {
+      content: '>';
+    }
+
+    .lightcase-icon-prev:before {
+      content: '<';
+  }
+
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
